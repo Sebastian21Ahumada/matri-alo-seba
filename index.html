@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alondra & Sebastián · Matrimonio 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════ NAVBAR ══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">A <span>&</span> S</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#" class="nav-link active" data-page="home">Inicio</a></li>
+      <li><a href="#" class="nav-link" data-page="historia">Nuestra Historia</a></li>
+      <li><a href="#" class="nav-link" data-page="ceremonia">Ceremonia &amp; Fiesta</a></li>
+      <li><a href="#" class="nav-link" data-page="dresscode">Dresscode</a></li>
+      <li><a href="#" class="nav-link" data-page="novios">Lista de Novios</a></li>
+      <li><a href="#" class="nav-link" data-page="asistencia">Confirmar Asistencia</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════ HOME ══════════════════════ -->
+    <section class="page active" id="page-home">
+
+      <div class="hero">
+        <div class="hero-petals" aria-hidden="true">
+          <span class="petal"></span>
+          <span class="petal petal--b"></span>
+          <span class="petal petal--c"></span>
+          <span class="petal petal--b"></span>
+          <span class="petal petal--d"></span>
+          <span class="petal"></span>
+          <span class="petal petal--c"></span>
+          <span class="petal petal--b"></span>
+          <span class="petal petal--d"></span>
+          <span class="petal"></span>
+          <span class="petal petal--c"></span>
+          <span class="petal petal--b"></span>
+        </div>
+
+        <!-- Ramas de cerezo: esquina superior-derecha -->
+        <div class="hero-branch" aria-hidden="true">
+          <svg viewBox="0 0 520 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ramas -->
+            <path d="M505 5 C475 55 405 95 345 162 C285 228 238 298 200 400 C172 472 158 548 165 700" stroke="#7A8888" stroke-width="5.5" stroke-linecap="round"/>
+            <path d="M410 80 C372 60 322 65 290 83" stroke="#7A8888" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M345 162 C308 138 268 145 248 163" stroke="#7A8888" stroke-width="3" stroke-linecap="round"/>
+            <path d="M285 228 C260 210 233 215 220 232" stroke="#7A8888" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M238 298 C216 280 195 283 185 298" stroke="#7A8888" stroke-width="2" stroke-linecap="round"/>
+            <path d="M455 38 C445 25 450 15 462 10" stroke="#8A9898" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M375 118 C368 106 374 96 384 92" stroke="#8A9898" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Hojas -->
+            <ellipse cx="463" cy="10" rx="5" ry="8" fill="#8A9898" opacity="0.55" transform="rotate(-30 463 10)"/>
+            <ellipse cx="383" cy="91" rx="4" ry="7" fill="#8A9898" opacity="0.5" transform="rotate(25 383 91)"/>
+            <ellipse cx="315" cy="105" rx="4" ry="7" fill="#8A9898" opacity="0.45" transform="rotate(-40 315 105)"/>
+            <ellipse cx="265" cy="172" rx="4" ry="6.5" fill="#8A9898" opacity="0.4" transform="rotate(-25 265 172)"/>
+            <ellipse cx="225" cy="250" rx="3.5" ry="6" fill="#8A9898" opacity="0.38" transform="rotate(-15 225 250)"/>
+            <!-- Capullos -->
+            <ellipse cx="498" cy="7" rx="6" ry="11" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.7" transform="rotate(-15 498 7)"/>
+            <ellipse cx="474" cy="24" rx="5.5" ry="10" fill="#F0B0C5" stroke="#D880A0" stroke-width="0.6" transform="rotate(-28 474 24)"/>
+            <ellipse cx="452" cy="45" rx="5" ry="9" fill="#F2B8CA" stroke="#D880A0" stroke-width="0.6" transform="rotate(-22 452 45)"/>
+            <!-- FLOR 1 ~(285,80) -->
+            <g transform="translate(285,80)">
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(72)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(144)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(216)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(288)"/>
+              <circle r="7" fill="#FFF2F8"/>
+              <g transform="rotate(0)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(60)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(120)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(180)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(240)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(300)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+            </g>
+            <!-- FLOR 2 ~(242,160) rotada 15° -->
+            <g transform="translate(242,160) rotate(15)">
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(72)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(144)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(216)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(288)"/>
+              <circle r="7" fill="#FFF2F8"/>
+              <g transform="rotate(0)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(60)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(120)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(180)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(240)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(300)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+            </g>
+            <!-- FLOR 3 ~(215,230) mediana (0.82×) rotada -10° -->
+            <g transform="translate(215,230) rotate(-10)">
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6" transform="rotate(72)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6" transform="rotate(144)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6" transform="rotate(216)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6" transform="rotate(288)"/>
+              <circle r="5.5" fill="#FFF2F8"/>
+              <g transform="rotate(0)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(60)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(120)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(180)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(240)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(300)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+            </g>
+            <!-- FLOR 4 ~(182,296) pequeña rotada 8° -->
+            <g transform="translate(182,296) rotate(8)">
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.5"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.5" transform="rotate(72)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.5" transform="rotate(144)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.5" transform="rotate(216)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.5" transform="rotate(288)"/>
+              <circle r="5.5" fill="#FFF2F8"/>
+              <g transform="rotate(0)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(60)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(120)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(180)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(240)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(300)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Ramas de cerezo: esquina inferior-izquierda -->
+        <div class="hero-branch-bl" aria-hidden="true">
+          <svg viewBox="0 0 440 580" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ramas -->
+            <path d="M8 578 C32 510 72 448 118 386 C165 323 215 262 265 198 C305 148 350 98 440 50" stroke="#7A8888" stroke-width="5.5" stroke-linecap="round"/>
+            <path d="M118 386 C88 366 58 370 42 386" stroke="#7A8888" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M218 260 C192 240 164 244 150 260" stroke="#7A8888" stroke-width="3" stroke-linecap="round"/>
+            <path d="M350 98 C376 78 396 84 405 98" stroke="#7A8888" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M265 198 C250 178 240 172 248 158" stroke="#8A9898" stroke-width="1.8" stroke-linecap="round"/>
+            <!-- Hojas -->
+            <ellipse cx="42" cy="388" rx="4.5" ry="7.5" fill="#8A9898" opacity="0.5" transform="rotate(70 42 388)"/>
+            <ellipse cx="155" cy="262" rx="4" ry="7" fill="#8A9898" opacity="0.45" transform="rotate(50 155 262)"/>
+            <ellipse cx="406" cy="100" rx="4" ry="7" fill="#8A9898" opacity="0.4" transform="rotate(-20 406 100)"/>
+            <ellipse cx="248" cy="157" rx="3.5" ry="6" fill="#8A9898" opacity="0.4" transform="rotate(30 248 157)"/>
+            <ellipse cx="175" cy="310" rx="3.5" ry="6" fill="#8A9898" opacity="0.38" transform="rotate(20 175 310)"/>
+            <!-- Capullos -->
+            <ellipse cx="10" cy="570" rx="6" ry="11" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.7" transform="rotate(10 10 570)"/>
+            <ellipse cx="30" cy="548" rx="5" ry="9" fill="#F0B0C5" stroke="#D880A0" stroke-width="0.6" transform="rotate(15 30 548)"/>
+            <!-- FLOR 1 ~(38,383) -->
+            <g transform="translate(38,383) rotate(-5)">
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(72)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(144)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(216)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(288)"/>
+              <circle r="7" fill="#FFF2F8"/>
+              <g transform="rotate(0)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(60)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(120)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(180)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(240)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(300)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+            </g>
+            <!-- FLOR 2 ~(146,257) rotada 20° -->
+            <g transform="translate(146,257) rotate(20)">
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(72)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(144)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(216)"/>
+              <path d="M0,2 C-13,-3,-22,-15,-18,-28 C-15,-38,-5,-42,0,-40 C5,-42,15,-38,18,-28 C22,-15,13,-3,0,2Z" fill="#EFA4BE" stroke="#D880A0" stroke-width="0.6" transform="rotate(288)"/>
+              <circle r="7" fill="#FFF2F8"/>
+              <g transform="rotate(0)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(60)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(120)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(180)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(240)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+              <g transform="rotate(300)"><line x1="0" y1="-7" x2="0" y2="-13" stroke="#C85878" stroke-width="1.1" stroke-linecap="round"/><circle cx="0" cy="-13" r="1.7" fill="#C85878"/></g>
+            </g>
+            <!-- FLOR 3 ~(407,96) mediana rotada -12° -->
+            <g transform="translate(407,96) rotate(-12)">
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6" transform="rotate(72)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6" transform="rotate(144)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6" transform="rotate(216)"/>
+              <path d="M0,1.5 C-10,-2,-18,-13,-15,-24 C-13,-32,-4,-35,0,-33 C4,-35,13,-32,15,-24 C18,-13,10,-2,0,1.5Z" fill="#F0AABE" stroke="#D880A0" stroke-width="0.6" transform="rotate(288)"/>
+              <circle r="5.5" fill="#FFF2F8"/>
+              <g transform="rotate(0)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(60)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(120)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(180)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(240)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+              <g transform="rotate(300)"><line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#C85878" stroke-width="1" stroke-linecap="round"/><circle cx="0" cy="-10" r="1.4" fill="#C85878"/></g>
+            </g>
+          </svg>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-pre">¡Nos casamos!</p>
+          <h1 class="hero-names">Alondra <em>&amp;</em> Sebastián</h1>
+          <div class="gold-divider"></div>
+          <p class="hero-date">Sábado, 28 de Noviembre · 2026</p>
+          <p class="hero-location">Limache, Chile</p>
+
+          <div class="countdown" id="countdown">
+            <div class="cdown-item"><span id="cd-days">00</span><small>Días</small></div>
+            <div class="cdown-sep">:</div>
+            <div class="cdown-item"><span id="cd-hours">00</span><small>Horas</small></div>
+            <div class="cdown-sep">:</div>
+            <div class="cdown-item"><span id="cd-minutes">00</span><small>Min</small></div>
+            <div class="cdown-sep">:</div>
+            <div class="cdown-item"><span id="cd-seconds">00</span><small>Seg</small></div>
+          </div>
+
+          <p class="hero-quote">"Te invitamos a ser parte de este día tan especial"</p>
+        </div>
+      </div>
+
+      <div class="section-wrap">
+        <div class="welcome-card animate-on-scroll">
+          <div class="ornament-row"><span>✦</span></div>
+          <h2>Con inmensa alegría</h2>
+          <p>Tenemos el honor de invitarte a compartir con nosotros el día más especial de nuestras vidas. Tu presencia hará de este momento un recuerdo único e irrepetible.</p>
+          <div class="ornament-row"><span>✦</span></div>
+        </div>
+
+        <div class="quick-info animate-on-scroll">
+          <div class="qi-card">
+            <div class="qi-icon">💍</div>
+            <h3>Ceremonia</h3>
+            <p>Sábado, 28 Nov 2026<br />18:00 hrs</p>
+          </div>
+          <div class="qi-card">
+            <div class="qi-icon">🥂</div>
+            <h3>Fiesta</h3>
+            <p>Después de la ceremonia<br />¡En el mismo lugar!</p>
+          </div>
+          <div class="qi-card">
+            <div class="qi-icon">📍</div>
+            <h3>Lugar</h3>
+            <p>Altos La Poyolla<br />Limache, Chile</p>
+          </div>
+        </div>
+
+        <!-- Nala: Home -->
+        <div class="nala-wrap animate-on-scroll" style="margin-top: 4rem;">
+          <div class="nala-inner">
+            <div class="nala-bubble">¡Los espero con todo! 🐾</div>
+            <img class="nala-img nala-img--md" src="Fotos/Nala/nala-extra.png" alt="Nala, la perrita de los novios" />
+          </div>
+        </div>
+
+
+    </section>
+
+    <!-- ══════════════════════ NUESTRA HISTORIA ══════════════════════ -->
+    <section class="page" id="page-historia">
+
+      <div class="page-header">
+        <div class="header-deco" aria-hidden="true">— ✦ —</div>
+        <h2>Nuestra Historia</h2>
+        <p class="page-sub">Un recorrido por los momentos que nos trajeron hasta aquí</p>
+      </div>
+
+      <div class="section-wrap">
+        <div class="chapter-nav-bar">
+          <button class="ch-btn" id="prevChapter" aria-label="Capítulo anterior">&#8592;</button>
+          <span class="ch-label" id="chapterLabel">Capítulo 1 de 5</span>
+          <button class="ch-btn" id="nextChapter" aria-label="Capítulo siguiente">&#8594;</button>
+        </div>
+
+        <div class="chapter-card" id="chapterCard">
+          <!-- Content injected by JS -->
+        </div>
+
+        <div class="ch-dots" id="chDots"></div>
+
+        <!-- Nala: Historia -->
+        <div class="nala-wrap nala-left" style="margin-top:1.25rem;">
+          <div class="nala-inner">
+            <img class="nala-img nala-img--sm" src="Fotos/Nala/nala-historia.png" alt="Nala" />
+            <div class="nala-bubble nala-bubble--left">¡Capítulo V es el mío! 🐾</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════ CEREMONIA Y FIESTA ══════════════════════ -->
+    <section class="page" id="page-ceremonia">
+
+      <div class="page-header">
+        <div class="header-deco" aria-hidden="true">— ✦ —</div>
+        <h2>Ceremonia &amp; Fiesta</h2>
+        <p class="page-sub">Todos los detalles del gran día</p>
+      </div>
+
+      <div class="section-wrap">
+
+        <div class="event-single animate-on-scroll">
+          <div class="ev-header">
+            <div class="event-icon">🌸</div>
+            <h3>Altos La Poyolla</h3>
+            <p class="ev-location">Limache, Región de Valparaíso</p>
+            <span class="ev-date-chip">Sábado, 28 de Noviembre · 2026</span>
+          </div>
+
+          <div class="ev-divider"></div>
+
+          <p class="ev-narrative">
+            El día que tanto hemos esperado está cada vez más cerca y nos llena de alegría poder compartirlo contigo.<br><br>
+
+            Te esperamos el <strong>28 de noviembre de 2026</strong> a las <strong>18:00 hrs.</strong> en <strong>Altos La Poyolla, Limache, Región de Valparaíso</strong>.<br><br>
+
+            Para nosotros es muy importante que puedas acompañarnos desde el inicio de la ceremonia, por lo que te agradecemos considerar tu llegada con anticipación.<br><br>
+
+            Estamos ansiosos por celebrar contigo este momento tan especial.
+          </p>
+
+          <div class="ev-details-row">
+            <div class="ev-detail-item">
+              <span class="ev-detail-icon">📅</span>
+              <div>
+                <strong>Fecha</strong>
+                <span>Sábado, 28 de Noviembre de 2026</span>
+              </div>
+            </div>
+            <div class="ev-detail-item">
+              <span class="ev-detail-icon">🕕</span>
+              <div>
+                <strong>Hora de inicio</strong>
+                <span>18:00 hrs · ¡Te esperamos puntual!</span>
+              </div>
+            </div>
+            <div class="ev-detail-item">
+              <span class="ev-detail-icon">📍</span>
+              <div>
+                <strong>Lugar</strong>
+                <span>Altos La Poyolla, Limache</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-block animate-on-scroll">
+          <h3>¿Cómo llegar?</h3>
+          <p class="map-hint">Avenida Los Laureles s/n, Limache · Región de Valparaíso</p>
+
+          <div class="directions-block">
+            <h4>Indicaciones desde Viña del Mar</h4>
+            <ol class="directions-list">
+              <li>
+                <span class="dir-num">1</span>
+                <p>Salir desde <strong>Viña del Mar</strong> tomando el <strong>Troncal Sur</strong> en dirección a Limache.</p>
+              </li>
+              <li>
+                <span class="dir-num">2</span>
+                <p>Continuar hasta llegar al <strong>Peaje Lateral Laureles Poniente</strong> y pagarlo.</p>
+              </li>
+              <li>
+                <span class="dir-num">3</span>
+                <p>Una vez pasado el peaje, doblar a la <strong>izquierda</strong> por <strong>Calle Los Laureles</strong> (pasarás por el paso bajo nivel).</p>
+              </li>
+              <li>
+                <span class="dir-num">4</span>
+                <p>Seguir por esa calle hasta ver a un costado el negocio <strong>"La Poyolla 2"</strong>.</p>
+              </li>
+              <li>
+                <span class="dir-num">5</span>
+                <p>Doblar a la <strong>derecha</strong> por el <strong>camino de tierra</strong> que se encuentra allí.</p>
+              </li>
+              <li class="dir-final">
+                <span class="dir-num">🌸</span>
+                <p>Al <strong>final de la calle</strong> encontrarás <strong>Altos La Poyolla</strong>, ¡el lugar de nuestra celebración!</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=-32.9659895,-71.3115763&hl=es&z=16&output=embed"
+              width="100%"
+              height="420"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Altos La Poyolla, Limache">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Nala: Ceremonia -->
+        <div class="nala-wrap nala-left animate-on-scroll" style="margin-top:2.5rem;">
+          <div class="nala-inner">
+            <img class="nala-img nala-img--md" src="Fotos/Nala/nala-Inicio.png" alt="Nala" />
+            <div class="nala-bubble nala-bubble--left">¡Ahí estaré yo también! 🐾</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════ DRESSCODE ══════════════════════ -->
+    <section class="page" id="page-dresscode">
+
+      <div class="page-header">
+        <div class="header-deco" aria-hidden="true">— ✦ —</div>
+        <h2>Dresscode</h2>
+        <p class="page-sub">Acompáñanos con tu mejor look</p>
+      </div>
+
+      <div class="section-wrap">
+
+        <div class="dress-badge animate-on-scroll">
+          <span>Garden / Formal</span>
+        </div>
+        <p class="dress-intro animate-on-scroll">
+          Queremos que todos luzcan elegantes y cómodos en este día tan especial.
+          A continuación encontrarás nuestra guía de estilo.
+        </p>
+
+        <div class="dress-grid animate-on-scroll">
+          <div class="dress-card">
+            <div class="dress-photo">
+              <img src="Fotos/Dresscode/mujeres.png" alt="Referencia vestimenta damas" class="dress-ref-img" />
+            </div>
+            <div class="dress-info">
+              <h3>Damas</h3>
+              <p>Vestidos largos o midi en tonos alegres, pasteles o inspirados en la naturaleza. Los estampados florales son bienvenidos, privilegiando siempre un estilo elegante y sofisticado.</p>
+            </div>
+          </div>
+          <div class="dress-card">
+            <div class="dress-photo">
+              <img src="Fotos/Dresscode/hombres.png" alt="Referencia vestimenta caballeros" class="dress-ref-img" />
+            </div>
+            <div class="dress-info">
+              <h3>Caballeros</h3>
+              <p>Traje formal con corbata en tonos suaves o inspirados en el entorno natural, como beige, azul, verde o celeste. Se recomienda una apariencia elegante y fresca acorde a una celebración al aire libre.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="palette-block animate-on-scroll">
+          <h3>Paleta de Colores Sugerida</h3>
+          <p>Inspírate en estos tonos para tu atuendo:</p>
+          <div class="swatches">
+            <div class="swatch" style="background:#cf7b8f;" data-name="Rosa" data-light="1"></div>
+            <div class="swatch" style="background:#eb65df;" data-name="Fucsia"></div>
+            <div class="swatch" style="background:#fbea92;" data-name="Amarillo"></div>
+            <div class="swatch" style="background:#f89f65;" data-name="Naranja"></div>
+            <div class="swatch" style="background:#6B8E7F;" data-name="Verde"></div>
+            <div class="swatch" style="background:#2d3a85;" data-name="Azul"></div>
+            <div class="swatch" style="background:#b5d2f0;" data-name="Celeste"></div>
+            <div class="swatch" style="background:#9B7FA6;" data-name="Lavanda"></div>
+          </div>
+        </div>
+
+        <div class="dress-warning animate-on-scroll">
+          <span>⚠️</span>
+          <p><strong>Por favor evitar:</strong> blanco, marfil, crema o cualquier tono claro que pueda confundirse con el vestido de novia.</p>
+        </div>
+
+        <!-- Nala: Dresscode -->
+        <div class="nala-wrap animate-on-scroll" style="margin-top:4rem;">
+          <div class="nala-inner">
+            <div class="nala-bubble">¡Yo ya tengo mi pañuelo! 🐾</div>
+            <img class="nala-img nala-img--md" src="Fotos/Nala/nala-dresscode.png" alt="Nala" />
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════ LISTA DE NOVIOS ══════════════════════ -->
+    <section class="page" id="page-novios">
+
+      <div class="page-header">
+        <div class="header-deco" aria-hidden="true">— ✦ —</div>
+        <h2>Lista de Novios</h2>
+        <p class="page-sub">Gracias por acompañarnos en esta nueva aventura</p>
+      </div>
+
+      <div class="section-wrap">
+
+        <div class="rsvp-main animate-on-scroll">
+          <div class="rsvp-icon">🎁</div>
+          <h3>¡Regálanos un sueño!</h3>
+          <p>Celebrar junto a ti es lo más importante para nosotros, pero si deseas hacernos un regalo, te invitamos a conocer los deseos que hemos preparado con mucho cariño.</p>
+          <a href="https://milistadenovios.cl/lista/matri-alondra-sebastian" target="_blank" rel="noopener noreferrer" class="rsvp-btn">
+            Ver Lista de Novios <span aria-hidden="true">→</span>
+          </a>
+          <p class="rsvp-hint">Al hacer clic serás redirigido a nuestra lista en milistadenovios.cl</p>
+        </div>
+<!--
+        <div class="rsvp-cards animate-on-scroll">
+          <div class="rsvp-card">
+            <span>💛</span>
+            <p>Tu presencia ya es el mejor regalo de todos</p>
+          </div>
+          <div class="rsvp-card">
+            <span>✨</span>
+            <p>Elige el deseo que más te inspire y hazlo realidad</p>
+          </div>
+          <div class="rsvp-card">
+            <span>🏡</span>
+            <p>Cada aporte nos ayuda a construir nuestro hogar juntos</p>
+          </div>
+        </div>
+-->
+
+        <!-- Nala: Lista de Novios -->
+        <div class="nala-wrap nala-left animate-on-scroll" style="margin-top:1.5rem;">
+          <div class="nala-inner">
+            <img class="nala-img nala-img--sm" src="Fotos/Nala/Nala-listaNovios.png" alt="Nala" />
+            <div class="nala-bubble nala-bubble--left">¡Un huesito también sirve! 🐾</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════ CONFIRMAR ASISTENCIA ══════════════════════ -->
+    <section class="page" id="page-asistencia">
+
+      <div class="page-header">
+        <div class="header-deco" aria-hidden="true">— ✦ —</div>
+        <h2>Confirmar Asistencia</h2>
+        <p class="page-sub">¡Esperamos verte ese día!</p>
+      </div>
+
+      <div class="section-wrap">
+
+        <div class="rsvp-main animate-on-scroll">
+          <div class="rsvp-icon">📮</div>
+          <h3>¿Vendrás a celebrar con nosotros?</h3>
+          <p>Por favor confirma tu asistencia antes del <strong>30 de Agosto de 2026</strong>. Es muy importante para nosotros saber cuántos serán para preparar todo con el cariño que se merecen.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXQek5m7QdsS8FCHGAix89YlptB1lDQO1qcpFibZgAz4F5BQ/viewform" target="_blank" rel="noopener noreferrer" class="rsvp-btn">
+            Confirmar mi Asistencia <span aria-hidden="true">→</span>
+          </a>
+          <p class="rsvp-hint">Al hacer clic serás redirigido a nuestro formulario de Google Forms</p>
+
+        </div>
+<!--
+        <div class="rsvp-cards animate-on-scroll">
+          <div class="rsvp-card">
+            <span>✅</span>
+            <p>Indica si asistirás solo/a o con acompañante</p>
+          </div>
+          <div class="rsvp-card">
+            <span>🍽️</span>
+            <p>Cuéntanos si tienes alguna restricción alimentaria</p>
+          </div>
+          <div class="rsvp-card">
+            <span>📅</span>
+            <p>Responde antes del <strong>30 de Agosto</strong></p>
+          </div>
+        </div>
+-->
+        <!-- Nala: Asistencia -->
+        <div class="nala-wrap nala-center animate-on-scroll" style="margin-top:2rem;">
+          <div class="nala-inner">
+            <div class="nala-bubble">¡Yo ya confirmé! 🐾</div>
+            <img class="nala-img nala-img--lg" src="Fotos/Nala/nala-Inicio.png" alt="Nala" />
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer">
+    <p>Con amor, Alondra &amp; Sebastián · 2026</p>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
