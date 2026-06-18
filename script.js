@@ -84,11 +84,11 @@ const CHAPTERS = [
     emoji: '✨',
     img:   'img/historia/cap-1.jpg',
     title: 'El Comienzo',
-    text:  'Nos encontramos por primera vez en las pequeñas sillas de Pre-Kinder. Ninguno de los dos lo sabía aún, pero ese primer día de clases fue el comienzo de una historia que duraría toda la vida. Entre juegos, colores y meriendas compartidas, nació una amistad que el tiempo solo haría más fuerte.'
+    text:  'Nos conocimos por primera vez en el colegio. Desde muy pequeños, no imaginábamos que ese primer día de clases marcaría el inicio de una amistad que, con el tiempo, se haría cada vez más fuerte.'
   },
   {
     num:   'Capítulo II',
-    year:  '2003',
+    year:  '2003-2016',
     emoji: '⭐',
     img:   'img/historia/cap-2.jpg',
     title: 'Los Mejores Amigos',
@@ -108,15 +108,15 @@ const CHAPTERS = [
     emoji: '🏡',
     img:   'img/historia/cap-4.jpg',
     title: 'El Hogar que Construimos',
-    text:  'Después de años juntos, dimos el paso que convirtió nuestra relación en una vida compartida. Mudarnos juntos fue pintar las paredes con nuestros propios colores, decidir en qué cajón iba cada cosa y descubrir que incluso esas pequeñas discusiones eran parte de construir un hogar. Han sido cinco años compartiendo el mismo espacio, conociéndonos en profundidad y aprendiendo el uno del otro de una manera que pocas personas tienen el privilegio de experimentar.'
+    text:  'Después de años juntos, dimos el paso que transformó nuestra relación en una vida compartida. Cambiarnos de casa y comenzar a vivir juntos fue toda una experiencia: aprender a organizar nuestros espacios, decorar según nuestros gustos y descubrir que incluso esas pequeñas discusiones eran parte de construir un hogar. Han sido cinco años compartiendo el mismo espacio, conociéndonos en profundidad y aprendiendo el uno del otro de una manera que pocos tienen el privilegio de experimentar.'
   },
   {
     num:   'Capítulo V',
-    year:  '2023',
+    year:  '2022',
     emoji: '🐕',
     img:   'img/historia/cap-5.jpg',
     title: 'La Familia Crece',
-    text:  'Todo buen hogar necesita cuatro patas y mucho pelo. Y así llegó el tercer integrante de nuestra familia: un perrito que, desde el primer día, encontró su lugar en el sofá, en la cama y, sobre todo, en nuestros corazones. Porque si algo dice mucho de una pareja, es la forma en que cuidan juntos a alguien que depende completamente de ellos. Y si podemos decir algo al respecto, es que nos ha salido bastante bien.'
+    text:  'Todo buen hogar necesita cuatro patas y mucho pelo. Así llegó el tercer integrante de nuestra familia: una perrita que, desde el primer día, encontró su lugar en el sofá, en la cama y, sobre todo, en nuestros corazones. Asumimos el desafío y la responsabilidad de cuidar por siempre a nuestra querida Nala, porque, si algo dice mucho de una pareja, es la forma en que cuidan juntos a alguien que depende completamente de ellos.'
   },
   {
     num:   'Capítulo VI',
@@ -124,7 +124,7 @@ const CHAPTERS = [
     emoji: '💍',
     img:   'img/historia/cap-6.jpg',
     title: 'La Propuesta',
-    text:  'Veintisiete años después de aquel primer día en Pre-Kínder, nuestra historia llega a uno de sus momentos más esperados. Este 28 de noviembre de 2026, vamos a prometernos lo que ya nos hemos demostrado durante toda una vida: que nos elegimos el uno al otro, hoy y siempre. Y aunque aquí termina este cuento, en realidad es solo el comienzo del capítulo más importante de todos. Gracias por acompañarnos y ser parte de nuestra historia.'
+    text:  'Después de muchos años, nuestra historia llega a uno de sus momentos más esperados. Este 28 de noviembre de 2026, vamos a prometernos aquello que ya nos hemos demostrado a lo largo de la vida: que nos elegimos el uno al otro, hoy y siempre. Y aunque aquí parece terminar este cuento, en realidad es solo el comienzo de un nuevo capítulo, el más importante: nuestra vida juntos. Gracias por acompañarnos y ser parte de nuestra historia'
   }
 ];
 
