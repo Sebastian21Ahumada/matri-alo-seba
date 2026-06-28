@@ -114,10 +114,21 @@ body {
   display: none;
   background: var(--white);
   margin: calc(var(--navbar-h) + 14px) 14px 14px;
-  border: 2px solid var(--frame-olive);
+  border: 3px solid var(--frame-olive);
   border-radius: 10px;
   overflow: hidden;
   min-height: calc(100vh - var(--navbar-h) - 28px);
+  position: relative;
+  padding: 6px;
+}
+.page::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1.5px solid var(--frame-olive);
+  border-radius: 5px;
+  pointer-events: none;
+  z-index: 10;
 }
 .page.active { display: block; animation: fadeSlideIn 0.45s ease; }
 
@@ -307,6 +318,8 @@ body {
   gap: 0.75rem;
   background: var(--card-bg);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
   border-radius: 20px;
   padding: 1rem 2rem;
   margin: 0.5rem 0 1.75rem;
@@ -373,6 +386,8 @@ body {
   text-align: center;
   box-shadow: 0 6px 22px var(--card-shadow);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .qi-card:hover { transform: translateY(-5px); box-shadow: 0 14px 32px var(--card-shadow-lg); }
@@ -490,6 +505,8 @@ body {
   padding: 3rem 3.5rem;
   box-shadow: 0 8px 32px var(--card-shadow);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
   min-height: auto;
   position: relative;
   overflow: hidden;
@@ -511,6 +528,8 @@ body {
   overflow: hidden;
   background: var(--card-bg);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
   flex-shrink: 0;
 }
 .ch-photo-wrap.ch-photo-err {
@@ -591,6 +610,8 @@ body {
   padding: 3rem 3.5rem;
   box-shadow: 0 8px 32px var(--card-shadow);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
@@ -636,6 +657,8 @@ body {
   border-radius: 14px;
   padding: 1.75rem 1.25rem;
   border: 1px solid var(--frame-olive);
+  outline: 1px solid #cf8890;
+  outline-offset: 2px;
   box-shadow: 0 4px 16px var(--card-shadow);
 }
 .ev-prog-icon { font-size: 2.4rem; margin-bottom: 0.2rem; }
@@ -674,6 +697,8 @@ body {
   gap: 0.65rem;
   background: var(--card-bg);
   border: 1px solid var(--frame-olive);
+  outline: 1px solid #cf8890;
+  outline-offset: 2px;
   border-radius: 12px;
   padding: 0.9rem 1.25rem;
   min-width: 190px;
@@ -697,6 +722,8 @@ body {
 .directions-block {
   background: var(--card-bg);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
   border-radius: var(--radius);
   padding: 2rem 2.5rem;
   margin: 1.5rem 0 2rem;
@@ -705,7 +732,7 @@ body {
 .directions-block h4 {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
-  color: var(--text-dark);
+  color: #757e5f;
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--pink-light);
@@ -742,7 +769,7 @@ body {
   line-height: 1.6;
   padding-top: 0.2rem;
 }
-.directions-list strong { color: var(--text-dark); }
+.directions-list strong { color: #cf8890; font-weight: 700; }
 
 @media (max-width: 600px) {
   .ev-details-row { flex-direction: column; align-items: stretch; }
@@ -753,14 +780,17 @@ body {
 /* Map */
 .map-block { text-align: center; }
 .map-block h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.75rem; color: var(--frame-olive); margin-bottom: 0.5rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 1.75rem; color: #cf8890; margin-bottom: 0.5rem;
 }
 .map-hint { color: var(--text-light); font-size: 0.9rem; font-style: italic; margin-bottom: 1.25rem; }
 .map-wrap {
   border-radius: var(--radius); overflow: hidden;
   box-shadow: 0 8px 28px var(--card-shadow);
   border: 2px solid var(--frame-olive);
+  outline: 2px solid #cf8890;
+  outline-offset: 3px;
 }
 
 @media (max-width: 540px) {
@@ -775,7 +805,7 @@ body {
 .dress-badge { text-align: center; margin-bottom: 1rem; }
 .dress-badge span {
   display: inline-block;
-  background: linear-gradient(135deg, var(--pink-mid), var(--gold-mid));
+  background: #cf8890;
   color: var(--white);
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
@@ -785,8 +815,9 @@ body {
   text-transform: uppercase;
 }
 .dress-intro {
-  text-align: center; color: var(--text-mid); max-width: 580px;
-  margin: 0 auto 2.5rem; line-height: 1.8; font-size: 1.02rem;
+  text-align: center; color: #cf8890; max-width: 580px;
+  margin: 0 auto 2.5rem; line-height: 1.8; font-size: 1.15rem;
+  font-family: 'Dancing Script', cursive; font-weight: 400;
 }
 .dress-grid {
   display: grid; grid-template-columns: repeat(2, 1fr);
@@ -796,6 +827,8 @@ body {
   background: var(--card-bg); border-radius: var(--radius); overflow: hidden;
   box-shadow: 0 6px 22px var(--card-shadow);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .dress-card:hover { transform: translateY(-5px); box-shadow: 0 14px 34px var(--card-shadow-lg); }
@@ -821,6 +854,17 @@ body {
   color: var(--frame-olive); margin-bottom: 0.5rem;
 }
 .dress-info p { color: var(--text-mid); font-size: 0.93rem; line-height: 1.7; }
+.dress-pin-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: #cf8890;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.dress-pin-link:hover { color: var(--gold-dark); }
 
 /* Palette */
 .palette-block { text-align: center; margin-bottom: 2.5rem; }
@@ -828,7 +872,10 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 1.55rem; color: var(--frame-olive); margin-bottom: 0.4rem;
 }
-.palette-block > p { color: var(--text-mid); margin-bottom: 1.5rem; }
+.palette-block > p {
+  color: #cf8890; margin-bottom: 1.5rem;
+  font-family: 'Dancing Script', cursive; font-weight: 400; font-size: 1.15rem;
+}
 .swatches { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .swatch {
   width: 88px; height: 88px;
@@ -848,6 +895,8 @@ body {
 .dress-warning {
   background: var(--card-bg);
   border: 1px solid var(--frame-olive);
+  outline: 1px solid #cf8890;
+  outline-offset: 2px;
   border-radius: 12px; padding: 1.25rem 1.75rem;
   display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 2rem;
   box-shadow: 0 4px 16px var(--card-shadow);
@@ -868,6 +917,8 @@ body {
   padding: 2.5rem;
   box-shadow: 0 6px 24px var(--card-shadow);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
   position: relative; overflow: hidden;
 }
 .transfer-card h3 {
@@ -896,6 +947,8 @@ body {
 .gift-note {
   background: var(--card-bg);
   border: 1px solid var(--frame-olive);
+  outline: 1px solid #cf8890;
+  outline-offset: 2px;
   border-radius: 12px; padding: 1.25rem 1.75rem; text-align: center;
   box-shadow: 0 4px 16px var(--card-shadow);
 }
@@ -909,13 +962,17 @@ body {
 }
 .rsvp-icon { font-size: 5rem; margin-bottom: 1.25rem; display: block; }
 .rsvp-main h3 {
-  font-family: 'Playfair Display', serif; font-size: 1.75rem;
-  color: var(--frame-olive); margin-bottom: 1rem;
+  font-family: 'Dancing Script', cursive; font-weight: 700; font-size: 1.75rem;
+  color: #cf8890; margin-bottom: 1rem;
 }
 .rsvp-main p { color: var(--text-mid); line-height: 1.85; font-size: 1rem; margin-bottom: 0.6rem; }
+.rsvp-intro {
+  color: #cf8890;
+  font-family: 'Dancing Script', cursive; font-weight: 400; font-size: 1.15rem;
+}
 .rsvp-btn {
   display: inline-flex; align-items: center; gap: 0.75rem;
-  background: linear-gradient(135deg, var(--pink-mid), var(--gold-mid));
+  background: #cf8890;
   color: var(--white); text-decoration: none;
   padding: 1rem 2.5rem; border-radius: 50px;
   font-family: 'Playfair Display', serif; font-size: 1.1rem;
@@ -931,6 +988,8 @@ body {
   padding: 1.75rem 1.25rem; text-align: center;
   box-shadow: 0 6px 20px var(--card-shadow);
   border: 1.5px solid var(--frame-olive);
+  outline: 1.5px solid #cf8890;
+  outline-offset: 3px;
 }
 .rsvp-card span { font-size: 2.5rem; display: block; margin-bottom: 0.75rem; }
 .rsvp-card p { font-size: 0.9rem; color: var(--text-mid); line-height: 1.65; }
