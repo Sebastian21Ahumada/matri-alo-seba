@@ -275,3 +275,48 @@ checkAnimations();
 document.querySelectorAll('.swatch').forEach(sw => {
   sw.setAttribute('title', sw.dataset.name || '');
 });
+
+/* ═══════════════════════════════════════
+   NALA (HOME) – click to chat
+═══════════════════════════════════════ */
+const nalaHomeImg    = document.getElementById('nalaHomeImg');
+const nalaHomeBubble = document.getElementById('nalaHomeBubble');
+const nalaHomeHint   = document.getElementById('nalaHomeHint');
+
+if (nalaHomeImg && nalaHomeBubble) {
+  /* Once the entrance pop-in finishes, hand off to the idle pulse
+     so it keeps hinting that it's clickable. */
+  nalaHomeImg.addEventListener('animationend', e => {
+    if (e.animationName === 'nalaPopIn') {
+      nalaHomeImg.closest('.nala-pop-wrap')?.classList.add('nala-settled');
+    }
+  });
+
+  const NALA_MESSAGES = [
+    '¡Los espero con todo! 🐾',
+    '¿Ya tienes tu outfit listo? 👗',
+    '¡No olvides confirmar tu asistencia! 💌',
+    '¡Si quieres me puedes regalar unos huesitos! 🦴',
+    '¡Faltan pocos días! 🎉'
+  ];
+  let nalaMsgIndex = 0;
+
+  nalaHomeImg.addEventListener('click', () => {
+    nalaHomeHint?.classList.add('nala-hint--hidden');
+
+    nalaMsgIndex = (nalaMsgIndex + 1) % NALA_MESSAGES.length;
+    nalaHomeBubble.textContent = NALA_MESSAGES[nalaMsgIndex];
+
+    nalaHomeImg.classList.add('nala-wiggle');
+    nalaHomeBubble.classList.add('nala-bubble-pop');
+
+    /* Restart the animations via inline style (highest specificity),
+       so re-clicking never falls back to the entrance keyframes. */
+    nalaHomeImg.style.animation = 'none';
+    nalaHomeBubble.style.animation = 'none';
+    requestAnimationFrame(() => {
+      nalaHomeImg.style.animation = '';
+      nalaHomeBubble.style.animation = '';
+    });
+  });
+}

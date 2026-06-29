@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alondra & Sebastián · Matrimonio 2026</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="img/favicon/favicon-512.png" />
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -50,11 +57,7 @@
 
         <div class="hero-content">
           <p class="hero-pre">¡Nos casamos!</p>
-          <h1 class="hero-names">
-            <span class="hero-name-line">Alondra</span>
-            <span class="hero-amp">&amp;</span>
-            <span class="hero-name-line">Sebastián</span>
-          </h1>
+          <img class="hero-names-img" src="img/titulos/nombre-novios.png" alt="Alondra &amp; Sebastián" />
           <img class="hero-date-img" src="img/icons/fecha-hora.png" alt="Sábado 28 de Noviembre, 18:00 hrs" />
 
           <div class="countdown" id="countdown">
@@ -72,34 +75,41 @@
       <div class="section-wrap">
         <div class="welcome-intro animate-on-scroll">
           <h2>Con inmensa alegría</h2>
-          <p>Te invitamos a compartir con nosotros este día tan especial.</p>
+          <p>Te invitamos a compartir con nosotros <br> este día tan especial.</p>
         </div>
 
         <div class="quick-info animate-on-scroll">
           <div class="qi-card">
             <div class="qi-icon"><img src="img/icons/ceremonia.png" alt="Ceremonia" /></div>
-            <h3>Ceremonia</h3>
-            <p>Sábado, 28 Nov 2026<br />18:00 hrs</p>
+            <div class="qi-text">
+              <h3>Ceremonia</h3>
+              <p>Sábado, 28 Nov 2026<br />18:00 hrs</p>
+            </div>
           </div>
           <div class="qi-card">
             <div class="qi-icon"><img src="img/icons/brindis.png" alt="Fiesta" /></div>
-            <h3>Fiesta</h3>
-            <p>La celebración continua<br />en el mismo lugar</p>
+            <div class="qi-text">
+              <h3>Fiesta</h3>
+              <p>La celebración continua<br />en el mismo lugar</p>
+            </div>
           </div>
           <div class="qi-card">
             <div class="qi-icon"><img src="img/icons/ubicacion.png" alt="Lugar" /></div>
-            <h3>Lugar</h3>
-            <p>Altos La Poyolla<br />Limache, Chile</p>
+            <div class="qi-text">
+              <h3>Lugar</h3>
+              <p>Altos La Poyolla<br />Limache, Chile</p>
+            </div>
           </div>
         </div>
 
         <!-- Nala: Home -->
-        <div class="nala-wrap animate-on-scroll" style="margin-top: 4rem;">
+        <div class="nala-wrap nala-pop-wrap animate-on-scroll" style="margin-top: 4rem;">
           <div class="nala-inner">
-            <div class="nala-bubble">¡Los espero con todo! 🐾</div>
-            <img class="nala-img nala-img--md" src="Fotos/Nala/nala-extra.png" alt="Nala, la perrita de los novios" />
+            <div class="nala-bubble" id="nalaHomeBubble">¡No olvides acariciarme! 🐾</div>
+            <img class="nala-img nala-img--md" id="nalaHomeImg" src="Fotos/Nala/nala-extra.png" alt="Nala, la perrita de los novios" />
           </div>
         </div>
+        <!-- <p class="nala-hint" id="nalaHomeHint">No olvides acariciar a la Nala 🐾</p> -->
 
 
     </section>
@@ -375,7 +385,6 @@
       <div class="section-wrap">
 
         <div class="rsvp-main animate-on-scroll">
-          <h3>¿Vendrás a celebrar con nosotros?</h3>
           <p class="rsvp-intro">Por favor, confirma tu asistencia antes del <strong>31 de agosto de 2026</strong>. Para nosotros es muy importante saber si podrás acompañarnos, para preparar todo con mucho cariño.</p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXQek5m7QdsS8FCHGAix89YlptB1lDQO1qcpFibZgAz4F5BQ/viewform" target="_blank" rel="noopener noreferrer" class="rsvp-btn">
             Confirmar mi Asistencia <span aria-hidden="true">→</span>

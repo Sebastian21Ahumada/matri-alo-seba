@@ -165,6 +165,10 @@ body {
   position: relative;
   overflow: hidden;
 }
+#page-novios .page-header,
+#page-asistencia .page-header { padding-bottom: 0.5rem; }
+#page-novios .section-wrap,
+#page-asistencia .section-wrap { padding-top: 1.5rem; }
 .header-deco {
   font-size: 0.95rem;
   letter-spacing: 8px;
@@ -277,32 +281,18 @@ body {
 .hero-pre {
   font-family: 'Dancing Script', cursive;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   color: #CB766A;
-  letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+  letter-spacing: 7px;
+  width: min(520px, 92%);
+  margin: 0 auto 1.75rem;
+  text-align: center;
 }
-.hero-names {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.05;
-  margin-bottom: 1.5rem;
-}
-.hero-name-line {
-  font-family: 'Century', Georgia, 'Times New Roman', serif;
-  font-weight: 400;
-  font-size: clamp(2.6rem, 8vw, 4.6rem);
-  color: #EFAB00;
-  letter-spacing: 1px;
-}
-.hero-amp {
-  font-family: 'Century', Georgia, 'Times New Roman', serif;
-  font-weight: 400;
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
-  color: #CB766A;
-  line-height: 1;
-  margin: 0.15rem 0;
+.hero-names-img {
+  display: block;
+  width: min(520px, 92%);
+  height: auto;
+  margin: 0 auto 1.5rem;
 }
 .hero-date-img {
   display: block;
@@ -380,10 +370,13 @@ body {
   gap: 1.5rem;
 }
 .qi-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
   background: var(--card-bg);
   border-radius: var(--radius);
-  padding: 2rem 1.5rem;
-  text-align: center;
+  padding: 1.75rem 1.5rem;
+  text-align: left;
   box-shadow: 0 6px 22px var(--card-shadow);
   border: 1.5px solid var(--frame-olive);
   outline: 1.5px solid #cf8890;
@@ -391,15 +384,16 @@ body {
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .qi-card:hover { transform: translateY(-5px); box-shadow: 0 14px 32px var(--card-shadow-lg); }
-.qi-icon { font-size: 2.4rem; margin-bottom: 0.75rem; }
-.qi-icon img { height: 2.6rem; width: auto; display: block; margin: 0 auto; }
+.qi-icon { flex-shrink: 0; width: 4.2rem; display: flex; align-items: center; justify-content: center; }
+.qi-icon img { max-height: 4.2rem; max-width: 100%; width: auto; height: auto; display: block; }
+.qi-text { flex: 1; }
 .qi-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.15rem;
   color: var(--frame-olive);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
-.qi-card p { color: var(--text-mid); font-size: 0.9rem; line-height: 1.65; }
+.qi-card p { color: var(--text-mid); font-size: 0.9rem; line-height: 1.55; }
 
 /* ═══════════════════════════════════════════
    NALA MASCOT
@@ -407,12 +401,12 @@ body {
 .nala-wrap {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 0;
   margin-top: 1.5rem;
   position: relative;
 }
-.nala-wrap.nala-left { justify-content: flex-start; }
+.nala-wrap.nala-left { justify-content: center; }
 .nala-wrap.nala-center { justify-content: center; }
 
 .nala-inner {
@@ -422,7 +416,7 @@ body {
 }
 
 .nala-img {
-  height: 115px;
+  height: 150px;
   width: auto;
   display: block;
   filter: drop-shadow(0 4px 14px rgba(160,60,80,.22));
@@ -430,20 +424,20 @@ body {
 }
 .nala-img:hover { transform: scale(1.06) rotate(-3deg); }
 
-.nala-img--sm  { height: 100px; }
-.nala-img--md  { height: 125px; }
-.nala-img--lg  { height: 145px; }
+.nala-img--sm  { height: 135px; }
+.nala-img--md  { height: 165px; }
+.nala-img--lg  { height: 190px; }
 
 .nala-bubble {
   position: absolute;
-  bottom: calc(100% - 18px);
-  right: calc(100% - 8px);
+  bottom: calc(100% - 20px);
+  right: calc(100% - 10px);
   background: var(--white);
   border: 2px solid var(--pink-light);
   border-radius: 14px 14px 4px 14px;
-  padding: 9px 16px;
+  padding: 11px 19px;
   font-family: 'Dancing Script', cursive;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   color: var(--pink-dark);
   white-space: nowrap;
   box-shadow: 0 3px 14px var(--shadow-pink);
@@ -465,6 +459,59 @@ body {
   right: auto;
   left: 16px;
 }
+
+/* Nala (Home): bouncy entrance + playful interaction */
+.nala-pop-wrap.visible:not(.nala-settled) .nala-img {
+  animation: nalaPopIn 0.8s cubic-bezier(.34, 1.56, .64, 1) both;
+}
+.nala-pop-wrap.visible .nala-bubble {
+  animation: nalaBubbleIn 0.6s ease 0.35s both;
+}
+@keyframes nalaPopIn {
+  0%   { transform: scale(0.3) rotate(-10deg); opacity: 0; }
+  55%  { transform: scale(1.1) rotate(5deg); opacity: 1; }
+  75%  { transform: scale(0.95) rotate(-2deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+@keyframes nalaBubbleIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.85); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+/* Idle "breathing" pulse once the entrance finishes, hinting it's clickable */
+.nala-pop-wrap.nala-settled .nala-img {
+  animation: nalaPulse 2.6s ease-in-out infinite;
+}
+@keyframes nalaPulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.045); }
+}
+.nala-pop-wrap .nala-img { cursor: pointer; }
+.nala-pop-wrap .nala-img:hover,
+.nala-pop-wrap .nala-img.nala-wiggle { animation: nalaWiggle 0.6s ease; }
+@keyframes nalaWiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  20% { transform: rotate(-10deg) scale(1.05); }
+  40% { transform: rotate(8deg) scale(1.05); }
+  60% { transform: rotate(-6deg) scale(1.02); }
+  80% { transform: rotate(4deg) scale(1.02); }
+}
+.nala-pop-wrap .nala-bubble.nala-bubble-pop { animation: nalaBubblePop 0.35s ease; }
+@keyframes nalaBubblePop {
+  0%   { transform: scale(0.9); }
+  60%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.nala-hint {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: #CB766A;
+  margin-top: 0.6rem;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.nala-hint.nala-hint--hidden { opacity: 0; }
 
 
 /* ═══════════════════════════════════════════
@@ -693,22 +740,25 @@ body {
 }
 .ev-detail-item {
   display: flex;
-  align-items: flex-start;
-  gap: 0.65rem;
+  align-items: center;
+  gap: 1rem;
   background: var(--card-bg);
   border: 1px solid var(--frame-olive);
   outline: 1px solid #cf8890;
   outline-offset: 2px;
   border-radius: 12px;
-  padding: 0.9rem 1.25rem;
-  min-width: 190px;
+  padding: 1rem 1.4rem;
+  min-width: 210px;
   flex: 1;
-  max-width: 240px;
+  max-width: 260px;
   box-shadow: 0 4px 14px var(--card-shadow);
 }
-.ev-detail-icon { font-size: 1.5rem; flex-shrink: 0; }
-.ev-detail-icon img { height: 1.8rem; width: auto; display: block; }
-.ev-detail-item div { display: flex; flex-direction: column; gap: 0.15rem; }
+.ev-detail-icon { flex-shrink: 0; }
+.ev-detail-icon img { height: 3.2rem; width: auto; display: block; }
+.ev-detail-item div {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  flex: 1; text-align: center; gap: 0.15rem;
+}
 .ev-detail-item strong {
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -1055,7 +1105,7 @@ body {
     padding: 0.8rem 1.5rem; font-size: 0.82rem;
   }
   .nav-link::after { display: none; }
-  .hero-name-line { font-size: clamp(2.2rem, 12vw, 3.5rem); }
+  .hero-names-img { width: min(380px, 90%); }
   .countdown { flex-wrap: wrap; gap: 0.5rem; padding: 0.75rem 1.25rem; }
   .cdown-sep { display: none; }
   .chapter-card { padding: 2rem 1.5rem; }
@@ -1085,10 +1135,10 @@ body {
   .nala-bubble {
     position: static;
     border-radius: 14px;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     white-space: normal;
     text-align: center;
-    max-width: 190px;
+    max-width: 210px;
     order: -1;
   }
   .nala-bubble--left { border-radius: 14px; }
