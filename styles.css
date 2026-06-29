@@ -424,9 +424,9 @@ body {
 }
 .nala-img:hover { transform: scale(1.06) rotate(-3deg); }
 
-.nala-img--sm  { height: 135px; }
-.nala-img--md  { height: 165px; }
-.nala-img--lg  { height: 190px; }
+.nala-img--sm  { height: 200px; }
+.nala-img--md  { height: 200px; }
+.nala-img--lg  { height: 200px; }
 
 .nala-bubble {
   position: absolute;
@@ -435,9 +435,9 @@ body {
   background: var(--white);
   border: 2px solid var(--pink-light);
   border-radius: 14px 14px 4px 14px;
-  padding: 11px 19px;
+  padding: 13px 23px;
   font-family: 'Dancing Script', cursive;
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   color: var(--pink-dark);
   white-space: nowrap;
   box-shadow: 0 3px 14px var(--shadow-pink);

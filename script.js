@@ -124,7 +124,7 @@ const CHAPTERS = [
     emoji: '💍',
     img:   'img/historia/cap-6.jpg',
     title: 'La Propuesta',
-    text:  'Después de muchos años, nuestra historia llega a uno de sus momentos más esperados. Este 28 de noviembre de 2026, vamos a prometernos aquello que ya nos hemos demostrado a lo largo de la vida: que nos elegimos el uno al otro, hoy y siempre. Y aunque aquí parece terminar este cuento, en realidad es solo el comienzo de un nuevo capítulo, el más importante: nuestra vida juntos. Gracias por acompañarnos y ser parte de nuestra historia'
+    text:  'Después de muchos años, nuestra historia llega a uno de sus momentos más esperados. Este 28 de noviembre de 2026, vamos a prometernos aquello que ya nos hemos demostrado a lo largo de la vida: que nos elegimos el uno al otro, hoy y siempre. Y aunque aquí parece terminar este cuento, en realidad es solo el comienzo de un nuevo capítulo, el más importante: nuestra vida juntos. Gracias por acompañarnos y ser parte de nuestra historia.'
   }
 ];
 
@@ -293,11 +293,19 @@ if (nalaHomeImg && nalaHomeBubble) {
   });
 
   const NALA_MESSAGES = [
-    '¡Los espero con todo! 🐾',
+    ' 🐾',
     '¿Ya tienes tu outfit listo? 👗',
-    '¡No olvides confirmar tu asistencia! 💌',
-    '¡Si quieres me puedes regalar unos huesitos! 🦴',
-    '¡Faltan pocos días! 🎉'
+    '¡No olvides confirmar tu asistencia, guau! 💌',
+    'Si sobra un regalito... ¡yo acepto huesitos! 🦴',
+    '¡Cada vez falta menos! 🎉',
+    'Prometo portarme bien... más o menos. 🐕 ',
+    '¿Creen que alguien deje caer un pedacito de carne? 🍖' ,
+    'Mi trabajo es asegurarme de que los novios sean felices. ❤️',
+    'Entre nosotros... van a llorar en la ceremonia.🤫',
+    '¡Prepárense para cantar todas las canciones!🎶',
+    '¡Brinden también por mí! 🥂',
+    'Si llegaste hasta aquí, ya me caes bien. 💕 ',
+    'Revisa toda la invitación, ¡hay mucha información importante! 📍'
   ];
   let nalaMsgIndex = 0;
 
